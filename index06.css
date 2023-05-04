@@ -1,0 +1,28 @@
+p {
+    color:blue;
+    background-color:lightgray;
+    font-size:48px !important;
+}
+
+div .pLight {
+    color:darkred;
+    background-color:whitesmoke;
+    font-size:20px;
+}
+
+.pDark {
+    color:lightblue;
+    background-color:black;
+    font-size:12px !important;
+}
+
+#p2 {
+    color:brown;
+    background-color:white;
+    font-size:32px !important;
+}
+
+div , span {
+    color:yellow;
+    background-color:orangered;
+}

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            @media only print {
+                #d1 {
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width:480px) {
+                #d1 {
+                    background-color: blue;
+                }
+            }
+
+            @media only screen and (max-width:700px) {
+                #d1 {
+                    background-color: red;
+                }
+            }
+
+            body {
+                font-size: 48px;
+            }
+
+            #d1 {
+                display: block;
+                width: 200px;
+                height: 2000px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+            salaam
+        </div>
+    </body>
+</html>

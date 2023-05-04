@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-size: 48px;
+            }
+        /* [] attribute selector */
+        /* ~ tilda */
+        /* | hyphen */
+        /* ^ hat = start with */
+        /* $ = end with */
+        /* * = contain*/
+        [title] {
+                color: yellow;
+            }
+
+            a[title] {
+                color: red;
+            }
+            
+            a[title="book"] {
+                color: brown;
+            }
+            
+            a[title~="Go"] {
+                background-color: silver;
+            }
+
+            a[title|="Go"] {
+                color: white;
+                background-color: black;
+            }
+
+            a[title^="Go"] {
+                color: yellow;
+                background-color: blue;
+            }
+
+            input[type="text"] {
+                width: 300px;
+                height: 100px;
+                border: none;
+                border-bottom: 1px solid silver;
+            }
+        /* css combinator */
+            p span {
+                color: green;
+            }
+            p > span {
+                background-color: brown;
+            }
+
+            #d1+span {
+                color: aqua;
+            }
+            
+            #d1~span {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#" title="Go to Homepage">Go to Homepage</a><br />
+        <a href="#" title="Go-2 to_2 Homepage">Go-2 to-2 Homepage</a><br />
+        <a href="#" title="book">Click Here</a><br />
+        <a href="#">Click Here</a><br />
+        <p title="Paragraph with title Home">
+            hello
+            <span>salaam</span>
+            <i><span>salaam 2</span></i>
+        </p>
+        <input type="text"/>
+        <input type="button"/>
+        <input type="password"/>
+        <br />
+        <br />
+        <div id="d1">
+            Div
+            <span>S0</span>
+        </div>
+        <span>S1</span>
+        <br />
+        <br />
+        <span>S2</span>
+        <br />
+        <br />
+        <i><span>S3</span></i>
+    </body>
+</html>
